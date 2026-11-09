@@ -42,3 +42,20 @@ cargo build --release
 ```
 
 ### Once compiled, the executable will be located in `target/release/`
+### Android App Prerequisites & Building
+
+To build the Android application located in the `android/` folder, you will need:
+
+1. **Java 17 (JDK 17)** (e.g., Eclipse Temurin).
+2. **Android SDK** (including platform-tools and build-tools). Ensure that the `ANDROID_HOME` environment variable points to your SDK path.
+
+#### Compilation
+
+Navigate into the `android/` directory, grant execution permissions to Gradle, and build the APK:
+
+```bash
+cd android
+chmod +x gradlew
+./gradlew assembleDebug
+```
+Once built, the debug APK will be available at: `android/app/build/outputs/apk/debug/app-debug.apk`

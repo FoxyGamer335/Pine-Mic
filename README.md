@@ -1,6 +1,6 @@
 # Pine-Mic
 App that lets you use your phone as a microphone
-## Prerequisites & Building (Linux)
+# Prerequisites & Building (Linux)
 
 This project was developed and tested on **CachyOS** (Arch Linux). The entire codebase was built with the assistance of **Claude Opus 5.5** and **Gemini 4 Argon**.
 
@@ -40,9 +40,9 @@ git clone [https://github.com/FoxyGamer335/Pine-Mic.git](https://github.com/Foxy
 cd Pine-Mic
 cargo build --release
 ```
+Once compiled, the executable will be located in `target/release/`
 
-### Once compiled, the executable will be located in `target/release/`
-### Android App Prerequisites & Building
+# Android App Prerequisites & Building
 
 To build the Android application located in the `android/` folder, you will need:
 

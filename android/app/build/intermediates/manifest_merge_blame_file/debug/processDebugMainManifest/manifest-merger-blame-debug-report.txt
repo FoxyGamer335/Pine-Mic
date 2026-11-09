@@ -1,0 +1,73 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="dev.phonemic.mic"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="29"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:4:5-67
+11-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+12-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:5:5-71
+12-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:5:22-68
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:6:5-77
+13-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:6:22-74
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+14-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:7:5-88
+14-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:7:22-85
+15    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+15-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:8:5-77
+15-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:8:22-74
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:9:5-68
+16-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:9:22-65
+17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+17-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:10:5-76
+17-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:10:22-73
+18
+19    <application
+19-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:12:5-31:19
+20        android:allowBackup="false"
+20-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:13:9-36
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:label="Phone Mic"
+23-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:14:9-34
+24        android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+24-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:15:9-71
+25        <activity
+25-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:17:9-25:20
+26            android:name="dev.phonemic.MainActivity"
+26-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:18:13-41
+27            android:exported="true"
+27-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:19:13-36
+28            android:screenOrientation="portrait" >
+28-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:20:13-49
+29            <intent-filter>
+29-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:21:13-24:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:22:17-69
+30-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:22:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:23:17-77
+32-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:23:27-74
+33            </intent-filter>
+34        </activity>
+35
+36        <service
+36-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:27:9-30:58
+37            android:name="dev.phonemic.MicService"
+37-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:28:13-39
+38            android:exported="false"
+38-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:29:13-37
+39            android:foregroundServiceType="microphone" />
+39-->/home/foxygamer/Документы/phone-mic/android/app/src/main/AndroidManifest.xml:30:13-55
+40    </application>
+41
+42</manifest>

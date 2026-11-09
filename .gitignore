@@ -1,2 +1,3 @@
-/target
-/android/app/build/
+target
+android/app/build/
+android/compile.sh

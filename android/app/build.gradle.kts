@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "dev.phonemic"
+    namespace = "dev.pinemic"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "dev.phonemic.mic"
+        applicationId = "dev.pinemic.mic"
         minSdk = 29          // platform Opus encoder (MediaCodec "audio/opus") exists from Android 10
         targetSdk = 34
         versionCode = 1

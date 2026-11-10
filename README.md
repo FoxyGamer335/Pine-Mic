@@ -2,7 +2,7 @@
 App that lets you use your phone as a microphone
 # Prerequisites & Building (Linux)
 
-This project was developed and tested on **CachyOS** (Arch Linux). The entire codebase was built with the assistance of **Claude Opus 5.5** and **Gemini 4 Argon**.
+This project was developed and tested on **CachyOS** (Arch Linux). The entire codebase was built with the assistance of **Claude Sonnet 5.5** and **Gemini 4 Argon**.
 
 ## 1. Install Dependencies
 

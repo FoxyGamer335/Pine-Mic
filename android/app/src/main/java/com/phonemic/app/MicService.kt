@@ -113,7 +113,7 @@ class MicService : Service() {
 
                     return Notification.Builder(this, CHANNEL_ID)
                     .setContentTitle("Pine Mic is active")
-                    .setContentText("Your microphone is available to the Linux app")
+                    .setContentText("Your microphone is available to the Desktop app")
                     .setSmallIcon(android.R.drawable.ic_btn_speak_now)
                     .setContentIntent(openIntent)
                     .setOngoing(true)

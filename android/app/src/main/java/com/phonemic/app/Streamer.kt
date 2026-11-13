@@ -110,7 +110,7 @@ private fun resolvePreferredDevice(context: Context, preferredId: Int): AudioDev
     return builtinMics.firstOrNull()
 }
 
-/** Site-local IPv4 addresses of this phone, for display ("type this into the Linux app"). */
+/** Site-local IPv4 addresses of this phone, for display ("type this into the Desktop app"). */
 fun localIpv4Addresses(): List<String> = try {
     Collections.list(NetworkInterface.getNetworkInterfaces())
     .filter { it.isUp && !it.isLoopback }
@@ -126,12 +126,12 @@ fun localIpv4Addresses(): List<String> = try {
 /**
  * Captures the microphone, encodes 48 kHz mono Opus and serves it over BOTH transports at once:
  *
- *  - UDP :54545  (Wi-Fi). The Linux app sends PMIC_HELLO1 once per second; we stream to its
+ *  - UDP :54545  (Wi-Fi). The Desktop app sends PMIC_HELLO1 once per second; we stream to its
  *                source address and stop ~3 s after the last HELLO (or on PMIC_BYE1).
  *  - TCP :54545  (USB via `adb forward`). Frames are length-prefixed: [len u16 BE][frame].
  *
  * Frame = [seq u16 BE][opus packet]. A UDP beacon "PHONEMIC1;<name>;<port>" is broadcast to
- * :54546 every second so the Linux app can list this phone.
+ * :54546 every second so the Desktop app can list this phone.
  */
 class Streamer(
     private val context: Context,
@@ -156,7 +156,7 @@ class Streamer(
 
     fun start() {
         if (!running.compareAndSet(false, true)) return
-            onStatus("Waiting for the Linux app (port $AUDIO_PORT)…")
+            onStatus("Waiting for the Desktop app (port $AUDIO_PORT)…")
             workers += thread(name = "pm-udp") { udpLoop() }
             workers += thread(name = "pm-tcp") { tcpLoop() }
             workers += thread(name = "pm-beacon") { beaconLoop() }
@@ -218,7 +218,7 @@ class Streamer(
                 }
                 msg.startsWith(BYE) -> {
                     udpPeer = null
-                    onStatus("Linux app disconnected. Waiting…")
+                    onStatus("Desktop app disconnected. Waiting…")
                 }
             }
         }
@@ -450,7 +450,7 @@ class Streamer(
         if (peer != null && sock != null) {
             if (SystemClock.elapsedRealtime() - lastHello > HELLO_TIMEOUT_MS) {
                 udpPeer = null
-                onStatus("Linux app stopped responding. Waiting…")
+                onStatus("Desktop app stopped responding. Waiting…")
             } else {
                 try { sock.send(DatagramPacket(frame, frame.size, peer)) } catch (_: IOException) {}
             }

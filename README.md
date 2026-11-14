@@ -102,7 +102,7 @@ The compiled binary will be located at `./target/release/phone-mic`.
 ```bash
 cd android
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
-export ANDROID_HOME=$HOME/Android/Sdk   # or your local android-sdk path
+export ANDROID_HOME=$HOME/android-sdk   # or your local android-sdk path
 chmod +x ./gradlew
 ./gradlew assembleDebug
 ```
@@ -114,10 +114,10 @@ The signed debug APK will be generated at:
 
 ## 🚀 Usage & CLI Options
 
-Run `./target/release/phone-mic` with no arguments to launch the **GUI** with system tray support.
+Run `./target/release/pine-mic` with no arguments to launch the **GUI** with system tray support.
 
 ```text
-Usage: phone-mic [OPTIONS]
+Usage: pine-mic [OPTIONS]
 ```
 
 | Option | Description | Default |

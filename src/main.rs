@@ -19,7 +19,7 @@ use crate::state::{
 
 /// Use an Android phone as a low-latency virtual microphone.
 #[derive(Parser, Debug)]
-#[command(name = "phone-mic", version)]
+#[command(name = "pine-mic", version)]
 struct Args {
     /// Run headless (no GUI, no tray, no Wayland/X11 initialisation)
     #[arg(long)]

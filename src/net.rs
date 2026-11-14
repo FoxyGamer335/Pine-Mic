@@ -1,4 +1,4 @@
-//! Networking for phone-mic.
+//! Networking for pine-mic.
 //!
 //! ## Wire protocol (the Android app must implement exactly this)
 //!

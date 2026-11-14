@@ -31,11 +31,11 @@ fn make_icon(muted: bool, connected: bool) -> Icon {
 
 impl Tray for PhoneTray {
     fn id(&self) -> String {
-        "phone-mic".into()
+        "pine-mic".into()
     }
 
     fn title(&self) -> String {
-        "Phone Mic".into()
+        "Pine Mic".into()
     }
 
     fn category(&self) -> Category {

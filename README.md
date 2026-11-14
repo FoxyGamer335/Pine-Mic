@@ -2,7 +2,7 @@
 
 Use your Android phone as a low-latency virtual microphone on Linux over Wi-Fi or USB.
 
-This project was developed and tested on **CachyOS** (Arch Linux). The entire codebase was built with the assistance of **Claude Opus 5.5** and **Gemini 4 Argon**.
+This project was developed and tested on **CachyOS** (Arch Linux). The entire codebase was built with the assistance of **Claude Sonnet 5.5** and **Gemini 4 Argon**.
 
 ---
 

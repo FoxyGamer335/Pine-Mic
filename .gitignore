@@ -1,5 +1,5 @@
 .gitignore
-target
+target/
 android/android-sdk/
 android/java-17-openjdk
 android/app/build/

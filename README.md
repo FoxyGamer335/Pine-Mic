@@ -19,7 +19,7 @@ This project was developed and tested on **CachyOS** (Arch Linux). The entire co
 
 ## 📦 Downloads & Runtime Requirements
 
-### 🐧 Linux Binary (`phone-mic`)
+### 🐧 Linux Binary (`pine-mic`)
 A standalone binary for Linux (compiled on CachyOS / Arch Linux).
 
 **Runtime Dependencies:**

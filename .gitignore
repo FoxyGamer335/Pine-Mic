@@ -1,3 +1,4 @@
+.gitignore
 target
 android/android-sdk/
 android/java-17-openjdk

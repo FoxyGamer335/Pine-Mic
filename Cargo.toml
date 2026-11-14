@@ -1,5 +1,5 @@
 [package]
-name = "phone-mic"
+name = "pine-mic"
 version = "0.1.0"
 edition = "2021"
 description = "Turn an Android phone into a low-latency virtual microphone on Linux (PipeWire)"
